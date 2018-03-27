@@ -1,0 +1,19 @@
+html,
+body{
+    height:100%;
+}
+#cover1{
+    height:100%;
+    color:black;
+    display:flex;
+    align-items:center;
+}
+.cover-caption1{
+    width:100%;
+}
+#video1{
+    display:none;
+}
+#new{
+    display:none;
+}

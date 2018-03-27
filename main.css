@@ -1,0 +1,37 @@
+html,
+body{
+    height:100%;
+}
+#cover{
+    background:#222 url('download1.jpg') center center no-repeat;
+    background-size:cover;
+    color:white;
+    height:100%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+}
+#cover-caption{
+    width:100%;
+}
+
+.section-content{
+    padding:80px 0;
+}
+#body1{
+    background-color:#585757;
+}
+#body1text{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:30px;
+}
+.card-body{
+    color:blue;     
+}
+#footer-main{
+    background:#222;
+    color:white;
+    font-size:12px;
+    padding:40px 0;
+}

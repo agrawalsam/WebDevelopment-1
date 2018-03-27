@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Banking Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+    <body>
+        <!-- Navbar -->
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="sbg-dark p-4">
+                  <div class="row">
+                      <div class="col-sm-3">
+                        <h4 class="sr-only">Font-Size</h4>
+                        <h4 class="text-black">Font Size</h4>
+                        <select name="" id="fS" class="btn btn-outline-dark">
+                            <option value="15" default>15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                          </select> 
+                          <button type="button" class="btn btn-outline-dark btn-md" id="fSChange">Try It.</button>
+                      </div>
+                      <div class="col-sm-3">
+                          <h4 class="sr-only">Line-Spacing</h4>
+                          <h4 class="text-black">Line Spacing</h4>
+                        <select name="" id="lineSpacing" class="btn btn-outline-dark">
+                            <option value="1.0">1.0</option>
+                            <option value="1.5" default>1.5</option>
+                            <option value="2.0">2.0</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3.0">3.0</option>
+                          </select> 
+                          <button type="button" class="btn btn-outline-dark btn-md" id="lineSpacingChange">Try It.</button>
+                      </div>
+                      <div class="col-sm-3">
+                          <h4 class="sr-only">Font-Family </h4>
+                          <h4 class="text-black">Font-Family</h4>
+                        <select name="Font3" id="fontFamily" class="btn btn-outline-dark">
+                          <option value="Times New Roman" default>Times New Roman</option>
+                          <option value="Arial">Arial</option>
+                          <option value="Verdana">Verdana</option>
+                          <option value="Comic Sans MS">Comic Sans MS</option>
+                        </select> 
+                        <button type="button" class="btn btn-outline-dark btn-md" id="fontFamilyChange">Try It.</button>
+                      </div>
+                      <div class="col-sm-3">
+                          <h4 class="sr-only"></h4>
+                          <h4 class="text-black">Pictogram</h4>
+                          
+                        <select name="" id="pictogram" class="btn btn-outline-dark">
+                            <option value="Off" default>Off</option>
+                            <option value="On">On</option>
+                          </select> 
+                          <button type="button" class="btn btn-outline-dark btn-md" id="pictogramChange">Try It.</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+
+        <!-- Cover -->
+        <section id="cover">
+            <div id="cover-caption">
+                <div class="container">
+                    <div class="col-sm-10 col-offset-sm-1">
+                      <h1 class="sr-only">Demo Online Banking Site</h4>
+                      <h1 style="padding-left:100px;">Demo Online Banking Site</h1>
+                      <p class="sr-only">Welcome to Adaptable Banking Website.</p>
+                      <p>Welcome to Adaptable Banking Website</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Navbar2-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Logo <span class="sr-only">Logo</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="code1.html">Sign In <span class="sr-only">Sign In</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accounts <span class="sr-only">Accounts</span>  </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Investment <span class="sr-only">Investment</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Mutual Funds <span class="sr-only">Mutual Funds</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Insurance <span class="sr-only">Insurance</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Personel <span class="sr-only">Personel</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Loan <span class="sr-only">Loan</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    <!--Cards-->
+    <section id="body1">
+        <div class="section-content">
+            <div class="container">
+                <div id="body1text">
+                <div class="col-md-12">
+                    <div class="heading" style="text-align:center;">
+                        <h1 style:"text-align:center;">Your Bank Only Reimagined!<span class="sr-only">Your Bank Only Reimagined!</span></h1>
+                    </div>
+                    <p class="lead" style="text-align:center;">
+                      LIFE CAN BE <br>QUITE A JOURNEY <br> IT HELPS TO HAVE <br> A GUIDE.
+                      <span class="sr-only">LIFE CAN BE <br>QUITE A JOURNEY <br> IT HELPS TO HAVE <br> A GUIDE.
+                      </span> 
+                    </p>
+                </div>
+                <div class="card-columns">
+                        <div class="card">
+                          <img class="card-img-top" src="download4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title" style="color:red;">Wall Street Surges <span class="sr-only">Wall Street Surges</span></h5>
+                            <p class="card-text">Strong Implementation of Current Policies By Government Results In Record High.
+                              <span class="sr-only">Strong Implementation of Current Policies By Government Results In Record High.</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="card p-3">
+                          <blockquote class="blockquote mb-0 card-body">
+                            <h5 class="card-title">Your Money Your Way <span class="sr-only">Your Money Your Way</span></h5>
+                            <p class="card-text">The All New Banking Experience Is Here.</p>
+                            <footer class="blockquote-footer">
+                              <small class="text-muted">
+                                Saurav Agrawal in <cite title="Source Title">Code 2 Create</cite>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                        <div class="card">
+                          <img class="card-img-top" src="download7.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title" style="color:red;">Auto Loans As Low As 1.79% APR
+                              <span class="sr-only">Auto Loans As Low As 1.79% APR</span>
+                            </h5>
+                            <p class="card-text">Automation dents auto loan futher.
+                              <span class="sr-only">Automation dents auto loan further.</span>
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card bg-primary text-white text-center p-3">
+                          <blockquote class="blockquote mb-0">
+                            <p>SECURITY CAUTION: Please donot disclose any type of information to anybody
+                              <span class="sr-only">SECURITY CAUTION: Please donot disclose any type of information to anybody</span>
+                            </p>
+                            <footer style="color:white" class="blockquote-footer">
+                              <small>
+                                Bank Policy <span class="sr-only">Bank Policy</span>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                        <div class="card text-center">
+                          <div class="card-body">
+                            <h5 class="card-title">Accelerate New Accounts</h5>
+                            <p class="card-text">For Us Money Grows On Family Trees
+                              <span class="sr-only">For Us Money Grows On Family Trees</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img class="card-img" src="download8.jpg" alt="Card image">
+                        </div>
+                        <div class="card p-3 text-right">
+                          <blockquote class="blockquote mb-0">
+                            <p style="color:red;">Rupee Strongest Than Ever <span class="sr-only">Rupee Strongest than ever</span></p>
+                            <footer class="blockquote-footer">
+                              <small class="text-muted">
+                                Raghuram Rajan in<cite title="Source Title"> New York Daily</cite>
+                              </small>
+                            </footer>
+                          </blockquote>
+                        </div>
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Other Online Payments <span class="sr-only">Other Online Payments</span></h5>
+                            <p class="card-text" style="color:green;">Income Tax / TDS Payments <br> GST Payments <br> Service Tax / Central Excise <br> MCA21 Payments
+                              <span class="sr-only">
+                                  Income Tax / TDS Payments <br> GST Payments <br> Service Tax / Central Excise <br> MCA21 Payments
+                              </span>
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>    
+            </div>
+        </div>
+    </section>  
+
+    <footer id="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Copy Rightable </p>
+                    <p>Licensed Under 2015</p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li>home</li>
+                        <li>what we do</li>
+                        <li>about</li>
+                        <li>latest</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Youtube</a></li>
+                        <li><a href="">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h6>Tiny</h6>
+                    <p>Lorem ipsum dolor sit amet  deserunt officia fugiat libero nisi! Autem quis blanditiis, quam earum consectetur excepturi sapiente exercitationem libero sed quae.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#fontFamilyChange").click(function(){
+            var a=$("#fontFamily").val();
+            $("body").css("font-family",a);
+           });
+          $("#fSChange").click(function(){
+            var b=$("#fS").val();
+            $("body").css("font-size",b);
+            $("#Check").css("font-size",b);
+           });
+           $("#lineSpacingChange").click(function(){
+            var c=$("#lineSpacing").val();
+            $("body").css("line-height",c);
+           });
+        });
+      </script>
+    </body>
+</html>
